@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US | ChillFlix </title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/AboutUsStyleSheet.css">
+<body>
+    <!--Navigation Bar-->
+    <div class="top fixed">
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+    <div id="toUp"></div>
+
+    <main>
+
+        <header>
+            <h1>About Us</h1>
+        </header>
+
+        <section>
+            <!--student 1 details-->
+            <div class="img-area">
+                <img src="../Images/student1.png" alt="Aaliya">
+                <div class="hide">
+                    <br>
+                    <h2>Rozan Aaliya</h2>
+                    <h2>Role : Student 1</h2>
+                </div>
+            </div>
+
+            <!--student 2 details-->
+            <div class="img-area" >
+                <img src="../Images/student2.png" alt="Chathuni">
+                <div class="hide">
+                    <br>
+                    <h2>Chathuni Gunasena</h2>
+                    <h2>Role : Student 2</h2>
+                </div>
+            </div>
+
+            <!--student 3 details-->
+            <div class="img-area" >
+                <img src="../Images/student3.png" alt="Thisari">
+                <div class="hide">
+                    <br>
+                    <h2>H.K.Thisari</h2>
+                    <h2>Role : Student 3</h2>
+                </div>
+            </div>
+
+            <!--student 4 details-->
+            <div class="img-area">
+                <img src="../Images/student4.png" alt="Tenuri">
+                <div class="hide">
+                    <br>
+                    <h2>Tenuri Udana</h2>
+                    <h2>Role : Student 4</h2>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student3EditorsPage.html"> H.K. Thisari</a></p></footer>
+</body>
+</html>

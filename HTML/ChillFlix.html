@@ -1,0 +1,71 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <style>
+        /* style for the icon */
+       #icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+            padding-top:150px;
+        }
+        /* style for group members name */
+        .name{
+            color:azure;
+            text-align:center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /* style fot title */
+        #title{
+            color:azure;
+            font-size: 23px;
+            text-align:center;
+            padding-top:10px ;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        /* style for animation (https://blog.hubspot.com/website/css-fade-in?hubs_content=blog.hubspot.com%2Fwebsite%2Fcss-fade-in&hubs_content-cta=Fade-in%20Image%20Transition)  */
+        .fade{
+            animation:fadeIn 3.5s;
+        }
+        @keyframes fadeIn{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        #footer{
+            position: absolute;
+            top:585px;
+            left:80%;
+            color: white;
+            font-family: Candara;
+            font-size: 20px;
+            text-align: center;
+            
+        } 
+        #footer a{
+            color: white;
+        }
+        #footer a:hover{
+            color: rgb(134, 124, 124);
+        }
+
+        
+
+    </style>
+</head>
+<meta http-equiv="refresh" content = "4;url=Home.html">
+<body style="background-color:rgb(18, 17, 17)">
+    <div class="fade">
+        <img id= "icon" alt="logo" src="../Images/icon2.png" width="750" height="225" >
+    </div>
+    <p id="title">Group members:</p>
+    <p class="name">Rozan Mohamed Aaliya</p>
+    <p class="name">Chathuni Gunasena</p>
+    <p class="name">H. K. Thisari</p>
+    <p class="name">Tenuri Udana Wickramaarachchi</p>
+    <p id="footer">Page Editor :<a href="Student1EditorsPage.html"> Rozan Aaliya</a></p>  
+
+</body>
+</html>

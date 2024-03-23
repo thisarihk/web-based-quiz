@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/QuizStyleSheet.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="top fixed">
+        <!--Adds the icon picture to the navigation bar.-->
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <!--Creating menu icon-->
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a class="active" href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+
+    <!-- Start button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Rules box -->
+    <div class="rules_box">
+        <div class="rules_title">
+            <span>Rules</span>
+        </div>
+        <div class="rules_list">
+            <div class="quiz_rules">1. You will have <span>1 minute</span> to complete the quiz.</div>
+            <div class="quiz_rules">2. Once you select your answer you can not reselect. </div>
+            <div class="quiz_rules">3. Quiz will be automatically submitted once the time goes off.</div>
+            <div class="quiz_rules">4. you will get <span>10 points</span> for <span>each</span> correct answer.</div>
+            <div class="quiz_rules">5. Click "Continue" to begin!</div>
+        </div>    
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!--Quiz box-->
+    <div class="quiz_box">
+        <header>
+            <div class="ques_count">
+                <!--<span><p>2</p>of<p>10</p>Questions</span>-->
+            </div>
+            <div class="timer"> 
+                <div class="time_txt">Time Left:</div>
+                <div class="timer_sec">59</div>
+                <div class="sec_txt">s</div>
+            </div>
+        </header>
+        <div class="QandA">
+            <div class="ques_text">
+                <!--<span>Who first added animation to films?</span>-->
+            </div>
+            <div class="answers_list">
+                <!--<div class="option">
+                    <span>Walt Disney</span>
+                </div>
+                <div class="option">
+                    <span>J.Stuart Blackton</span>
+                </div>
+                <div class="option">
+                    <span>Gustav Ucicky</span>
+                </div>
+                <div class="option">
+                    <span>Edwin Porter</span>
+                </div>-->
+            </div>
+        </div>
+        <div class="next_button">
+            <button class="next_btn">Next</button>
+        </div>
+    </div>
+
+    <!--Result Box -->
+    <div class="results_box">
+        <div class="completed_message">
+            <!--<span>You've completed the Quiz!</span>-->
+        </div>
+        <div class="ques_info">
+            <!--<span>You got <p>2</p> out of <p>10</p> Correct.</span>-->
+        </div>
+        <div class="total_score">
+            <!--<span>Score : <p>20 </p></span>-->
+        </div>
+        <div class="time_spent">
+            <!--<span>You took : <p> 25 Seconds </p></span>-->
+        </div>
+        <div class="performance">
+            <!--<span>Excellent !</span>-->
+        </div>
+        <div class="buttons">
+            <button class="restart">Star Again</button>
+        </div>
+    </div>
+
+    <script src="../JS/quiz.js"></script>
+    
+    <footer><p>Page Editor :<a href="Student3EditorsPage.html"> H.K. Thisari</a></p></footer>
+    
+</body>
+</html>
